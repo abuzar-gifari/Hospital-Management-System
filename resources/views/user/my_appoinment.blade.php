@@ -107,7 +107,7 @@
             </li>
             <li class="nav-item">
               <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
-            </li>
+            </li>  
 
             @endauth
             @endif
@@ -116,7 +116,7 @@
       </div> <!-- .container -->
     </nav>
   </header>
-
+{{--  --}}
   <div class="mt-4" style="font-family: 'Source Sans Pro', sans-serif;">
       <p class="text-center h2" style="font-family: 'Source Sans Pro', sans-serif;font-weight:900">Your Appoinment Informations</p><br>
       <table class="m-auto">
