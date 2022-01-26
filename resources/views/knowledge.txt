@@ -1,0 +1,37 @@
+{% comment %} 
+Send Email Notifications in laravel Command
+
+    1) php artisan notifications:table
+        -> inside database migration file, a migration file will be create
+    2) php artisan migrate
+    3) php artisan make:notification SendEmailNotification
+        -> Inside App folder, notification folder will be generated
+            and SendEmailNotification.php file will be create..
+    
+    $details=[
+        'greeting' => $request->greeting,
+        'body' => $request->greeting,
+        'actiontext' => $request->greeting,
+        'actionurl' => $request->greeting,
+        'endpart' => $request->greeting,
+    ];
+
+    Notification::send($data,new SendEmailNotification($details));
+
+    class Appoinment extends model {
+        use notifiable;
+    }
+
+// sending mail configuration
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=shaikh35-3024@diu.edu.bd
+MAIL_PASSWORD=fsgdhfhf
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=shaikh35-3024@diu.edu.bd
+MAIL_FROM_NAME="From Hospital"
+
+ {% endcomment %}
+ 
